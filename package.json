@@ -1,0 +1,29 @@
+{
+  "name": "drizzle.trial",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:clear": "drizzle-kit drop",
+    "db:migrate": "tsx src/drizzle/migrate.ts",
+    "studio": "drizzle-kit studio"
+  },
+  "keywords": [],
+  "author": "Ritesh Koushik",
+  "license": "ISC",
+  "description": "Simple drizzle tutorial repository",
+  "dependencies": {
+    "@types/node": "^20.14.9",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.31.2",
+    "pg": "^8.12.0",
+    "postgres": "^3.4.4",
+    "tsx": "^4.15.7"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.22.7",
+    "typescript": "^5.5.2"
+  }
+}
